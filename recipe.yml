@@ -62,6 +62,8 @@ rpm:
     - kate
     - distrobox
     - wireguard-tools
+    - libatomic
+    - helix
   # These RPMs will be removed from the system image. This step happens during
   # image build, BEFORE installing custom RPMs (from the "rpm.install" category).
   remove:
@@ -69,6 +71,9 @@ rpm:
     - firefox
     - firefox-langpacks
     - vim-minimal
+
+flatpak:
+  
 
 # Configuration for the "first boot" experience, which is available after login.
 firstboot:
@@ -85,5 +90,4 @@ firstboot:
   # the "just setup-flatpaks" command from our "custom.just" template file.
   # This is just an example selection:
   flatpaks:
-    - io.github.celluloid_player.Celluloid
-    - org.kde.krita
+    - com.bitwarden.desktop
