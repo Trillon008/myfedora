@@ -58,12 +58,13 @@ rpm:
     # Add your own below:
     - htop
     - btop
-    - nvim
+    - neovim
     - kate
     - distrobox
     - wireguard-tools
     - libatomic
     - helix
+    # - libratbag-ratbagd
   # These RPMs will be removed from the system image. This step happens during
   # image build, BEFORE installing custom RPMs (from the "rpm.install" category).
   remove:
@@ -72,8 +73,7 @@ rpm:
     - firefox-langpacks
     - vim-minimal
 
-flatpak:
-  
+
 
 # Configuration for the "first boot" experience, which is available after login.
 firstboot:
