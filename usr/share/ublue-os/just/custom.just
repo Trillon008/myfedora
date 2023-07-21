@@ -11,3 +11,15 @@ setup-flatpaks:
   done
 
 # Include some of your custom scripts here! 
+## Install Terminus Nerd Font 
+setup-nerdfont:
+  #!/usr/bin/env bash
+  echo 'Installing nerdfonts in home directory...'
+  tmppath=/tmp/terminus
+  mkdir ${tmppath}
+  wget -P ${tmppath} "https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.2/Terminus.zip"
+  unzip ${tmppath}/Terminus.zip 
+  if [ ! -d ${HOME}/.fonts ] then;
+    mkdir ${HOME}/.fonts
+  fi
+  mv ${tmppath}/*.ttf ${HOME}/.fonts/
