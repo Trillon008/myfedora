@@ -56,15 +56,12 @@ rpm:
   # at the "system level" in the final image.
   install:
     # Add your own below:
-    - htop
-    - btop
-    - neovim
-    - kate
-    - distrobox
     - wireguard-tools
     - libatomic
     - helix
-    # - libratbag-ratbagd
+    - starship
+    - mpv
+    - yt-dlp
   # These RPMs will be removed from the system image. This step happens during
   # image build, BEFORE installing custom RPMs (from the "rpm.install" category).
   remove:
@@ -72,6 +69,9 @@ rpm:
     - firefox
     - firefox-langpacks
     - vim-minimal
+    - google-noto-sans-javanese-fonts
+    - google-noto-sans-balinese-fonts
+    - google-noto-sans-sundanese-fonts
 
 
 
@@ -91,3 +91,11 @@ firstboot:
   # This is just an example selection:
   flatpaks:
     - com.bitwarden.desktop
+    - com.spotify.Client
+    - com.valvesoftware.Steam
+    - org.chromium.Chromium
+    - org.kde.kwrite
+    - com.obsproject.Studio
+    - org.freedesktop.Platform.VulkanLayer.MangoHud
+    - com.heroicgameslauncher.hgl
+    - org.mozilla.firefox
