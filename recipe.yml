@@ -62,6 +62,7 @@ rpm:
     - starship
     - mpv
     - yt-dlp
+    - btop
   # These RPMs will be removed from the system image. This step happens during
   # image build, BEFORE installing custom RPMs (from the "rpm.install" category).
   remove:
@@ -69,6 +70,7 @@ rpm:
     - firefox
     - firefox-langpacks
     - vim-minimal
+    - vim
     - google-noto-sans-javanese-fonts
     - google-noto-sans-balinese-fonts
     - google-noto-sans-sundanese-fonts
@@ -92,10 +94,15 @@ firstboot:
   flatpaks:
     - com.bitwarden.desktop
     - com.spotify.Client
-    - com.valvesoftware.Steam
     - org.chromium.Chromium
     - org.kde.kwrite
-    - com.obsproject.Studio
-    - org.freedesktop.Platform.VulkanLayer.MangoHud
-    - com.heroicgameslauncher.hgl
     - org.mozilla.firefox
+    - com.heroicgameslauncher.hgl
+    - com.valvesoftware.Steam
+    - com.valvesoftware.Steam.Utility.gamescope
+    - org.freedesktop.Platform.VulkanLayer.MangoHud//22.08
+    - org.freedesktop.Platform.VulkanLayer.OBSVkCapture//22.08
+    - com.obsproject.Studio
+    - com.obsproject.Studio.Plugin.OBSVkCapture
+    - com.obsproject.Studio.Plugin.Gstreamer
+  
