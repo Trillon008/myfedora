@@ -59,7 +59,6 @@ rpm:
     - wireguard-tools
     - libatomic
     - helix
-    - starship
     - mpv
     - yt-dlp
     - btop
