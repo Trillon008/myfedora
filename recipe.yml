@@ -70,7 +70,6 @@ rpm:
     - firefox
     - firefox-langpacks
     - vim-minimal
-    - vim
     - google-noto-sans-javanese-fonts
     - google-noto-sans-balinese-fonts
     - google-noto-sans-sundanese-fonts
@@ -100,8 +99,8 @@ firstboot:
     - com.heroicgameslauncher.hgl
     - com.valvesoftware.Steam
     - com.valvesoftware.Steam.Utility.gamescope
-    - org.freedesktop.Platform.VulkanLayer.MangoHud
-    - org.freedesktop.Platform.VulkanLayer.OBSVkCapture
+    - org.freedesktop.Platform.VulkanLayer.MangoHud//22.08
+    - org.freedesktop.Platform.VulkanLayer.OBSVkCapture//22.08
     - com.obsproject.Studio
     - com.obsproject.Studio.Plugin.OBSVkCapture
     - com.obsproject.Studio.Plugin.Gstreamer
