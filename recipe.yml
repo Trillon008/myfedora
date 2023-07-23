@@ -69,7 +69,7 @@ rpm:
     # Remove the native firefox (from Fedora) in favor of the Flatpak.
     - firefox
     - firefox-langpacks
-    - vim
+    - vim-minimal
     - google-noto-sans-javanese-fonts
     - google-noto-sans-balinese-fonts
     - google-noto-sans-sundanese-fonts
@@ -99,8 +99,8 @@ firstboot:
     - com.heroicgameslauncher.hgl
     - com.valvesoftware.Steam
     - com.valvesoftware.Steam.Utility.gamescope
-    - org.freedesktop.Platform.VulkanLayer.MangoHud//22.08
-    - org.freedesktop.Platform.VulkanLayer.OBSVkCapture//22.08
+    - org.freedesktop.Platform.VulkanLayer.MangoHud
+    - org.freedesktop.Platform.VulkanLayer.OBSVkCapture
     - com.obsproject.Studio
     - com.obsproject.Studio.Plugin.OBSVkCapture
     - com.obsproject.Studio.Plugin.Gstreamer
