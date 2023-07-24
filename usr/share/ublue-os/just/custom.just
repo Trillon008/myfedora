@@ -19,7 +19,7 @@ setup-nerdfont:
   mkdir ${tmppath}
   wget -P ${tmppath} "https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.2/Terminus.zip"
   unzip ${tmppath}/Terminus.zip 
-  if [ ! -d ${HOME}/.fonts ] then;
+  if [ ! -d ${HOME}/.fonts ]; then
     mkdir ${HOME}/.fonts
+    mv ${tmppath}/*.ttf ${HOME}/.fonts/  
   fi
-  mv ${tmppath}/*.ttf ${HOME}/.fonts/
