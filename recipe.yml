@@ -69,6 +69,7 @@ rpm:
     # Remove the native firefox (from Fedora) in favor of the Flatpak.
     - firefox
     - firefox-langpacks
+    - vim-enhanced
     - vim-common
     - google-noto-sans-javanese-fonts
     - google-noto-sans-balinese-fonts
