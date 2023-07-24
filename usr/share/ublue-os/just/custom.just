@@ -23,3 +23,12 @@ setup-nerdfont:
     mkdir ${HOME}/.fonts
     mv ${tmppath}/*.ttf ${HOME}/.fonts/  
   fi
+
+# Install flathub remote
+install-flathub:
+  echo "Remove fedora remote and add flathub"
+  flatremote=$(flatpak remotes --columns=name)
+  if [ ${flatremote} ] == 'fedora ']; then
+    flatpak remote-delete fedora
+    flatpak remote-add flathub --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+  fi
