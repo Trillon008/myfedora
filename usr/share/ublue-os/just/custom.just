@@ -19,7 +19,16 @@ setup-nerdfont:
   mkdir ${tmppath}
   wget -P ${tmppath} "https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.2/Terminus.zip"
   unzip ${tmppath}/Terminus.zip 
-  if [ ! -d ${HOME}/.fonts ] then;
+  if [ ! -d ${HOME}/.fonts ]; then
     mkdir ${HOME}/.fonts
+    mv ${tmppath}/*.ttf ${HOME}/.fonts/  
   fi
-  mv ${tmppath}/*.ttf ${HOME}/.fonts/
+
+# Install flathub remote
+install-flathub:
+  echo "Remove fedora remote and add flathub"
+  flatremote=$(flatpak remotes --columns=name)
+  if [ ${flatremote} ] == 'fedora ']; then
+    flatpak remote-delete fedora
+    flatpak remote-add flathub --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+  fi
