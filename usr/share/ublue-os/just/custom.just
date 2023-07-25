@@ -7,7 +7,7 @@ setup-flatpaks:
   flatpaks=$(yq -- '.firstboot.flatpaks[]' "/usr/share/ublue-os/recipe.yml")
   for pkg in $flatpaks; do \
       echo "Installing: ${pkg}" && \
-      flatpak install --user --noninteractive flathub $pkg; \
+      flatpak install  --noninteractive flathub $pkg; \
   done
 
 # Include some of your custom scripts here! 
@@ -18,7 +18,7 @@ setup-nerdfont:
   tmppath=/tmp/terminus
   mkdir ${tmppath}
   wget -P ${tmppath} 'https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.2/Terminus.zip'
-  unzip ${tmppath}/Terminus.zip 
+  unzip ${tmppath}/Terminus.zip -d ${tmppath}
   if [ ! -d ${HOME}/.fonts ]; then
     mkdir ${HOME}/.fonts
     mv ${tmppath}/*.ttf ${HOME}/.fonts/  
@@ -26,9 +26,11 @@ setup-nerdfont:
 
 # Install flathub remote
 install-flathub:
+  #!/usr/bin/env bash 
   echo 'Remove fedora remote and add flathub'
   flatremote=$(flatpak remotes --columns=name)
-  if [ ${flatremote} ] == 'fedora' ]; then
+  if [[ ${flatremote} ]] == 'fedora' ]; then
     flatpak remote-delete fedora
-    flatpak remote-add flathub --if-not-exists flathub 'https://dl.flathub.org/repo/flathub.flatpakrepo'
   fi
+  flatpak remote-add flathub --if-not-exists flathub 'https://dl.flathub.org/repo/flathub.flatpakrepo'
+  unset ${flatremote}
