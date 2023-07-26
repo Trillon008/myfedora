@@ -94,11 +94,11 @@ firstboot:
   # This is just an example selection:
   flatpaks:
     - com.bitwarden.desktop
-    - com.spotify.Client
     - org.chromium.Chromium
     - org.kde.kwrite
     - org.mozilla.firefox
     - org.signal.Signal
+    - org.qbittorrent.qBittorrent
     - org.godotengine.Godot
     - com.heroicgameslauncher.hgl
     - com.valvesoftware.Steam
