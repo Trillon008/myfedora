@@ -29,8 +29,8 @@ install-flathub:
   #!/usr/bin/env bash 
   echo 'Remove fedora remote and add flathub'
   flatremote=$(flatpak remotes --columns=name)
-  if [[ ${flatremote} ]] == 'fedora' ]; then
+  if [[ ${flatremote} == 'fedora' ]]; then
     flatpak remote-delete fedora
   fi
-  flatpak remote-add flathub --if-not-exists flathub 'https://dl.flathub.org/repo/flathub.flatpakrepo'
+  flatpak remote-add --if-not-exists flathub 'https://dl.flathub.org/repo/flathub.flatpakrepo'
   unset ${flatremote}
