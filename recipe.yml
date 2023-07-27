@@ -71,6 +71,7 @@ rpm:
     - firefox-langpacks
     - vim-enhanced
     - vim-common
+    - vim-minimal
     - google-noto-sans-javanese-fonts
     - google-noto-sans-balinese-fonts
     - google-noto-sans-sundanese-fonts
@@ -93,10 +94,12 @@ firstboot:
   # This is just an example selection:
   flatpaks:
     - com.bitwarden.desktop
-    - com.spotify.Client
     - org.chromium.Chromium
     - org.kde.kwrite
     - org.mozilla.firefox
+    - org.signal.Signal
+    - org.qbittorrent.qBittorrent
+    - org.godotengine.Godot
     - com.heroicgameslauncher.hgl
     - com.valvesoftware.Steam
     - com.valvesoftware.Steam.Utility.gamescope
