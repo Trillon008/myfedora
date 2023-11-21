@@ -58,11 +58,14 @@ rpm:
     # Add your own below:
     - wireguard-tools
     - libatomic
-    - helix
+    - nvim
     - starship
     - mpv
     - yt-dlp
     - btop
+    - openfortivpn
+    - plasma-nm-fortisslvpn 
+    - NetworkManager-fortisslvpn 
   # These RPMs will be removed from the system image. This step happens during
   # image build, BEFORE installing custom RPMs (from the "rpm.install" category).
   remove:
