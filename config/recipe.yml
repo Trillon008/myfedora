@@ -16,9 +16,9 @@ modules:
                   # configuration you wish to end up in /etc/ on the booted system
                   # should be added into /usr/etc/ as that is the proper "distro"
                   # config directory on ostree. Read more in the files module's README
-  - from-files: packages.yaml 
-  - from-files: fonts.yaml
-  - from-files: flatpaks.yaml
+  #  - from-files: packages.yml 
+  - from-files: fonts.yml
+  #  - from-files: flatpaks.yml
   - type: script
     scripts:
       # this sets up the proper policy & signing files for signed images to work
