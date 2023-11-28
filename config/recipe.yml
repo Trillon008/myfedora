@@ -1,17 +1,15 @@
-# image will be published to ghcr.io/<user>/<name>
 name: kukule
-# description will be included in the image's metadata
 description: Fedora tailored to my needs
 
-# the base image to build on top of (FROM) and the version tag to use
 base-image: ghcr.io/ublue-os/kinoite-main
-image-version: 39 # latest is also supported if you want new updates ASAP
+image-version: 39 
 
 # module configuration, executed in order
 # you can include multiple instances of the same module
 modules:
   - from-files: packages.yaml 
   - from-files: fonts.yaml
+  - from-files: flatpaks.yaml
   - type: script
     scripts:
       # this sets up the proper policy & signing files for signed images to work
