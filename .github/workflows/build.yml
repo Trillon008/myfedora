@@ -177,7 +177,7 @@ jobs:
 
       - name: Login to GitHub Container Registry
         uses: docker/login-action@v3
-        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/live'
+        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/live2'
         with:
           registry: ghcr.io
           username: ${{ github.actor }}
