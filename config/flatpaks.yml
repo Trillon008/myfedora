@@ -1,5 +1,5 @@
 type: default-flatpaks
-user:
+system:
   install:
     - com.bitwarden.desktop
     - org.chromium.Chromium
