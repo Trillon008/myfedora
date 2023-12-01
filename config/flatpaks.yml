@@ -1,0 +1,23 @@
+type: default-flatpaks
+user:
+  install:
+    - com.bitwarden.desktop
+    - org.chromium.Chromium
+    - org.kde.kwrite
+    - org.mozilla.firefox
+    - org.signal.Signal
+    - dev.aunetx.deezer
+    - com.spotify.Client
+    - md.obsidian.Obsidian
+    - org.qbittorrent.qBittorrent
+    - org.godotengine.Godot
+    - org.onlyoffice.desktopeditors
+    - com.heroicgameslauncher.hgl
+    - com.valvesoftware.Steam
+    - com.valvesoftware.Steam.Utility.gamescope
+    - org.freedesktop.Platform.VulkanLayer.MangoHud//22.08
+    - org.freedesktop.Platform.VulkanLayer.OBSVkCapture//22.08
+    - com.obsproject.Studio
+    - com.obsproject.Studio.Plugin.OBSVkCapture
+    - com.obsproject.Studio.Plugin.Gstreamer
+
