@@ -40,7 +40,7 @@ modules:
       - vim-minimal
       - google-noto-sans-javanese-fonts
       - google-noto-sans-balinese-fonts
-      - google-n               # config directory on ostree. Read more in the files module's README
+      - google-noto-sans-sundanese-fonts
   #  - from-files: packages.yml 
   #  - from-files: fonts.yml
   #  - from-files: flatpaks.yml
