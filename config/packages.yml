@@ -4,7 +4,7 @@ repos:
 install:
   # Add your own below:
   - wireguard-tools
-  # - libatomic
+  - libatomic # Required for noise-cancelling
   - pavucontrol-qt
   - neovim
   - kitty
