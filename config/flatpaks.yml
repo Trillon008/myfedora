@@ -4,9 +4,9 @@ system:
     - com.bitwarden.desktop
     - org.chromium.Chromium
     - org.kde.kwrite
+    - org.kde.okular
     - org.mozilla.firefox
     - org.signal.Signal
-    - dev.aunetx.deezer
     - com.spotify.Client
     - md.obsidian.Obsidian
     - org.qbittorrent.qBittorrent
@@ -18,5 +18,5 @@ system:
     - org.freedesktop.Platform.VulkanLayer.OBSVkCapture//23.08
     - com.obsproject.Studio
     - com.obsproject.Studio.Plugin.OBSVkCapture
-    - com.obsproject.Studio.Plugin.Gstreamer
+    - com.obsproject.Studio.Plugin.GStreamerVaapi
 
