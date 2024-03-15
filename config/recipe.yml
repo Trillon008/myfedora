@@ -18,7 +18,4 @@ modules:
   - from-file: packages.yml
   - from-file: fonts.yml
   - from-file: flatpaks.yml
-  - type: script
-    scripts:
-      # this sets up the proper policy & signing files for signed images to work
-      - signing.sh
+  - from-file: signing.yml
