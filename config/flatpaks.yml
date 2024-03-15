@@ -4,11 +4,14 @@ system:
     - com.bitwarden.desktop
     - org.chromium.Chromium
     - org.kde.kwrite
+    - org.kde.gwenview
     - org.kde.okular
     - org.mozilla.firefox
     - org.signal.Signal
     - com.spotify.Client
     - md.obsidian.Obsidian
+    - com.slack.Slack 
+    - org.rncbc.qpwgraph
     - org.qbittorrent.qBittorrent
     - org.godotengine.Godot
     - org.onlyoffice.desktopeditors
