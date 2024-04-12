@@ -11,6 +11,7 @@ install:
   - starship
   - mpv
   - bat
+  - wezterm
   - yt-dlp
   - btop
   - openfortivpn
