@@ -2,7 +2,7 @@ name: kukule
 description: Fedora tailored to my needs
 
 base-image: ghcr.io/ublue-os/kinoite-main
-image-version: 39 
+image-version: 40
 
 # module configuration, executed in order
 # you can include multiple instances of the same module
