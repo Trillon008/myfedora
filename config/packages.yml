@@ -15,7 +15,6 @@ install:
   - yt-dlp
   - btop
   - papirus-icon-theme
-  - timeshift
   - openfortivpn
   - plasma-nm-fortisslvpn
   - NetworkManager-fortisslvpn
