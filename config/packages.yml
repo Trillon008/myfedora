@@ -14,7 +14,6 @@ install:
   - wezterm
   - yt-dlp
   - btop
-  - papirus-icon-theme
   - openfortivpn
   - plasma-nm-fortisslvpn
   - NetworkManager-fortisslvpn
